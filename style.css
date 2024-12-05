@@ -53,30 +53,31 @@
   }
 
 .banner{
+  animation: slideInFromTop ease 1s;
   color: #FAFAFF;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 150px;
-  background-color: #3F4045;
+  background-color: #1C1C1C;
   font-family: Poppins;
   font-weight: 400;
-  text-shadow: 0px 3px #1C1C1C;
+  /*text-shadow: 0px 3px #3F4045;*/
   user-select: none;
   justify-content: center;
   align-items: center;
 }
 
 body{
-  background-color: #FAFAFF;
+  background-color: #ECEBE4;
   margin: 0;
 }
 
-.banner-btn-group {
+/*.banner-btn-group {
   display: flex;
   gap: 10px;
   margin-bottom: 15px;
-}
+}*/
 
 .home-btn {
   width: 200px;
@@ -148,33 +149,6 @@ body{
   transition: transform 0.1s ease, box-shadow 0.3s ease, background-color 0.1s ease;
 }
 
-.about-btn {
-  width: 200px;
-  height: 50px;
-  background-color: #5A5A5F;
-  color: #FAFAFF;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  text-shadow: 0px 2px #1C1C1C;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: transform 0.1s ease, box-shadow 0.2s ease;
-}
-
-.about-btn:hover{
-  transform: scale(1.03);
-  box-shadow: 0 5px #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
-}
-
-.about-btn:active{
-  transform: scale(0.97);
-  box-shadow: 0 0 #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-
 .about-btn:not(:hover){
   transform: scale(1);
   box-shadow: 0 0px #1C1C1C;
@@ -188,16 +162,22 @@ body{
   font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
+  animation: fadeInAnimation ease 2s;
 }
 
 .main-image-div{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px
+  text-align: center;
+  margin: auto;
+  gap: 15px;
+  padding-bottom: 20px;
+  animation: fadeInAnimation ease 2s;
 }
 
 .main-image{
+  animation: slideInFromLeft ease 1s;
   width: 576px;
   height:432px;
   border-radius: 15px;
@@ -207,10 +187,10 @@ body{
 0px 12px 43px rgba(28, 28, 28, 0.23),
 0px 20px 76px rgba(28, 28, 28, 0.15),
 0px 32px 119px rgba(28, 28, 28, 0.08);
-
 }
 
 .main-image-2{
+  animation: slideInFromRight ease 1s;
   width: 576px;
   height: 432px;
   border-radius: 15px;
@@ -219,10 +199,9 @@ body{
 0px 12px 43px rgba(28, 28, 28, 0.23),
 0px 20px 76px rgba(28, 28, 28, 0.15),
 0px 32px 119px rgba(28, 28, 28, 0.08);
-
 }
 
-.section-1-title{
+.title{
   display: flex;
   justify-content: center;
   align-self: center;
@@ -231,9 +210,10 @@ body{
   font-size: 20px;
   font-weight: 600;
   margin-bottom: -20px;
+  animation: fadeInAnimation ease 2s, slideInFromBottom ease 1s;
 }
 
-.section-1-description{
+.description{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,33 +226,41 @@ body{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: -50px;
+  animation: fadeInAnimation ease 2s, slideInFromBottom ease 1s;
 }
 
-.section-2-title{
+.section-3-container{
   display: flex;
-  justify-content: center;
-  align-self: center;
-  text-align: center;
-  font-family: Poppins;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: -20px;
-}
-
-.section-2-description{
-  display: flex;
+  width: 100%;
+  height: 300px;
+  background-color: #1C1C1C;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  color: #FAFAFF;
+}
+
+.section-3-title{
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  /*text-shadow: 0px 3px #3F4045;*/
+  margin-bottom: -20px;
+  margin-top: -50px;
+  animation: fadeInAnimation ease 2s, slideInFromBottom ease 1s;
+}
+
+.section-3-description{
   text-align: center;
   font-family: Poppins;
-  font-size: 15px;
   font-weight: 600;
-  padding-bottom: 50px;
+  font-size: 15px;
+  /*text-shadow: 0px 3px #3F4045;*/
   text-overflow: ellipsis;
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  animation: fadeInAnimation ease 2s, slideInFromBottom ease 1s;
 }
 
 .section-1-description-contact{
@@ -287,126 +275,4 @@ body{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.contact-input{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 30px;
-}
-
-.sender-email{
-  width: 300px;
-  height: 30px;
-  margin-bottom: 10px;
-  background-color: #3F4045;
-  border: 0;
-  border-radius: 5px;
-  color: #FAFAFF;
-  outline: 0;
-  font-family: Poppins;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.email-text{
-  width: 500px;
-  height: 300px;
-  background-color: #3F4045;
-  border: 0;
-  border-radius: 5px;
-  color: #FAFAFF;
-  outline: 0;
-  font-family: Poppins;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.email-subject{
-  width: 300px;
-  height: 30px;
-  margin-bottom: 10px;
-  background-color: #3F4045;
-  border: 0;
-  border-radius: 5px;
-  color: #FAFAFF;
-  outline: 0;
-  font-family: Poppins;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.sender-name{
-  width: 300px;
-  height: 30px;
-  margin-bottom: 10px;
-  background-color: #3F4045;
-  border: 0;
-  border-radius: 5px;
-  color: #FAFAFF;
-  outline: 0;
-  font-family: Poppins;
-  font-size: 13px;
-  font-weight: 500;
-}
-
-.sender-email-label{
-  font-family: Poppins;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.email-text-label{
-  font-family: Poppins;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.email-subject-label{
-  font-family: Poppins;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.sender-name-label{
-  font-family: Poppins;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-.send-email-btn{
-  width: 200px;
-  height: 50px;
-  background-color: #3F4045;
-  color: #FAFAFF;
-  font-family: Poppins;
-  font-size: 16px;
-  font-weight: 600;
-  text-shadow: 0px 2px #1C1C1C;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  transition: transform 0.1s ease, box-shadow 0.2s ease;
-}
-
-.send-email-btn:hover{
-  transform: scale(1.03);
-  box-shadow: 0 5px #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
-}
-
-.send-email-btn:active{
-  transform: scale(0.97);
-  box-shadow: 0 0 #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
-}
-
-.send-email-btn:not(:hover){
-  transform: scale(1);
-  box-shadow: 0 0px #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
 }
