@@ -81,7 +81,7 @@ body{
 .home-btn {
   width: 200px;
   height: 50px;
-  background-color: #5A5A5F;
+  background-color: #3F4045;
   color: #FAFAFF;
   font-family: Poppins;
   font-size: 16px;
@@ -95,25 +95,28 @@ body{
 .home-btn:hover{
   transform: scale(1.03);
   box-shadow: 0 5px #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  background-color: #5A5A5F;
+  transition: transform 0.1s ease, box-shadow 0.3s ease, background-color 0.1s ease;
 }
 
 .home-btn:active{
   transform: scale(0.97);
   box-shadow: 0 0 #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  background-color: #5A5A5F;
+  transition: transform 0.1s ease, box-shadow 0.3s ease, background-color 0.1s ease;
 }
 
 .home-btn:not(:hover){
   transform: scale(1);
   box-shadow: 0 0px #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  background-color: #3F4045;
+  transition: transform 0.1s ease, box-shadow 0.3s ease, background-color 0.1s ease;
 }
 
 .contact-btn {
   width: 200px;
   height: 50px;
-  background-color: #5A5A5F;
+  background-color: #3F4045;
   color: #FAFAFF;
   font-family: Poppins;
   font-size: 16px;
@@ -127,19 +130,22 @@ body{
 .contact-btn:hover{
   transform: scale(1.03);
   box-shadow: 0 5px #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  background-color: #5A5A5F;
+  transition: transform 0.1s ease, box-shadow 0.3s ease, background-color 0.1s ease;
 }
 
 .contact-btn:active{
   transform: scale(0.97);
   box-shadow: 0 0 #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.1s ease;
+  background-color: #5A5A5F;
+  transition: transform 0.1s ease, box-shadow 0.3s ease, background-color 0.1s ease;
 }
 
 .contact-btn:not(:hover){
   transform: scale(1);
   box-shadow: 0 0px #1C1C1C;
-  transition: transform 0.1s ease, box-shadow 0.3s ease;
+  background-color: #3F4045;
+  transition: transform 0.1s ease, box-shadow 0.3s ease, background-color 0.1s ease;
 }
 
 .about-btn {
@@ -240,6 +246,33 @@ body{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: -50px;
+}
+
+.section-2-title{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: -20px;
+}
+
+.section-2-description{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 50px;
+  text-overflow: ellipsis;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-1-description-contact{
@@ -254,4 +287,105 @@ body{
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.contact-input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.sender-email{
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #3F4045;
+  border: 0;
+  border-radius: 5px;
+  color: #FAFAFF;
+  outline: 0;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.email-text{
+  width: 500px;
+  height: 300px;
+  background-color: #3F4045;
+  border: 0;
+  border-radius: 5px;
+  color: #FAFAFF;
+  outline: 0;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.email-subject{
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #3F4045;
+  border: 0;
+  border-radius: 5px;
+  color: #FAFAFF;
+  outline: 0;
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.sender-email-label{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.email-text-label{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.email-subject-label{
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.send-email-btn{
+  width: 200px;
+  height: 50px;
+  background-color: #3F4045;
+  color: #FAFAFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 600;
+  text-shadow: 0px 2px #1C1C1C;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+}
+
+.send-email-btn:hover{
+  transform: scale(1.03);
+  box-shadow: 0 5px #1C1C1C;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+.send-email-btn:active{
+  transform: scale(0.97);
+  box-shadow: 0 0 #1C1C1C;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.send-email-btn:not(:hover){
+  transform: scale(1);
+  box-shadow: 0 0px #1C1C1C;
+  transition: transform 0.1s ease, box-shadow 0.3s ease;
 }

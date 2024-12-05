@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <script src="script.js"></script>
+    <a href="mailto:raphc19@outlook.com"></a>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,9 +22,25 @@
         </div>
         <div class="section-1-description-contact">
             <p>I'm 18 and I love building computers. I built my first computer back in July and I had a great time doing it (it also booted up with no problems!)
-                If you wish to contact me for a PC build or consultation, send me an email at raphc19@outlook.com. I look forward to doing business and appreciate
+                If you wish to contact me for a PC build or consultation, send me an email at raphc19@outlook.com. I look forward to doing business with you and appreciate
                 your consideration!
             </p>
         </div>
+        <form action="https://formsubmit.co/raphc19@outlook.com" method="POST">
+            <div class="contact-input">
+                <input type="hidden" name="_url" value="https://imbananacrazy.github.io/PC-Building-Site/index-2.html">
+
+                <label class="sender-email-label">Enter your email:</label>
+                <input id="sender-email" class="sender-email" type="email" maxlength="35" required>
+    
+                <label class="email-subject-label">Enter subject:</label>
+                <input id="email-subject" class="email-subject" type="text" maxlength="40" required>
+    
+                <label class="email-text-label">Enter your message:</label>
+                <textarea id="email-text" class="email-text" type="text" maxlength="1000" required></textarea>
+    
+                <button type="submit" class="send-email-btn">Send</button>
+            </div>
+        </form>
     </body>
 </html>
