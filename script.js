@@ -3,7 +3,7 @@ function openHome()
     window.location.href = "index.html";
 }
 
-function openContact()
+function openExamples()
 {
-    window.location.href = "index-2.html";
+    window.location.href = "examples.html";
 }
